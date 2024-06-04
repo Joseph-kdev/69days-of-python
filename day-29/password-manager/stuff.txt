@@ -1,0 +1,3 @@
+> amazon >> example@email.com >>> password 
+> facetime >> example@email.com >>> bigme 
+>  >> example@email.com >>>  
