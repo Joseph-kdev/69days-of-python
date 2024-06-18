@@ -6,7 +6,7 @@ API = os.environ.get("OWM_API")
 MY_LAT = -1.167240
 MY_LONG = 36.825500
 
-account_sid ="AC799fae012fc2471f665648fe3ef4ea42"
+account_sid = os.environ.get("TWILIO_SID")
 auth_token = os.environ.get("TWILIO_API")
 
 parameters = {
