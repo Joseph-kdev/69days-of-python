@@ -21,10 +21,10 @@ WebDriverWait(driver, 10).until(
 )
 
 email_input = driver.find_element(By.XPATH, '//*[@id="username"]')
-email_input.send_keys("cjkinuthia5@gmail.com")
+email_input.send_keys("email@gmail.com")
 
 password_input = driver.find_element(By.XPATH, '//*[@id="password"]')
-password_input.send_keys("kinuthia@01")
+password_input.send_keys("password")
 
 sign_in = driver.find_element(By.XPATH, '//*[@id="organic-div"]/form/div[3]/button').click()
 
