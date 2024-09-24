@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+	<body>
+		{% block content %}
+        <div class="container">
+		<h1>Login</h1>
+        <!-- This is where our form will go. -->
+		 <!-- <form action="{{ url_for('login') }}" method="POST" novalidate>
+			 {{ form.csrf_token }}
+			 {{ form.email.label }} 
+			 <br>
+			 {{ form.email(size=30) }}
+			 <span style="color: red;">
+				 {{ form.email.errors }}
+			 </span>
+			 <br>
+			 {{ form.password.label }}
+			 <br> 
+			 {{ form.password(size=30) }}
+			 <span style="color: red;">
+				 {{ form.password.errors }}
+			 </span>
+			 <br>
+			 {{ form.submit }}
+		 </form> -->
+		 {{ wtf.quickform(form, novalidate=True) }}
+        </div>
+		{% endblock %}
+	</body>
+</html>
